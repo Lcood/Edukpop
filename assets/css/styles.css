@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css?family=ABeeZee:400|Merriweather+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400');
 
 html {font-size: 16px;} 
 
@@ -27,21 +27,16 @@ html {font-size: 16px;}
     --red-60 : #f6ab9f;
     --red-80 : #fad5cf;
     --black: #000000;
-    --white: #fff;
     --red-light: #f8d7da;
 
     /* fonts  */
-    --headingFont: 'Merriweather Sans', sans-serif;
-    --bodyFont: 'ABeeZee', sans-serif;
-    --textFont: 0.7em;
+
+    --ff: 'Poppins', sans-serif;
 
     /* rest of the vars */
-    --backgroundColor: var(--greenLignt-0);
-    --headline : var(--green-40);
-    --textColor: var(--green-0);
     --borderRadius: 0.25rem;
     --letterSpacing: 1px;
-    --transition: 0.3s ease-in-out  all;
+    --transition: 0.3s ease-in-out all;
     --max-width: 1120px;
     --fixed-width: 600px;
 
@@ -55,7 +50,7 @@ html {font-size: 16px;}
 body{
     height: 100vh;
     background-color: #abd1c6;
-    font-family: var(--bodyFont);
+    font-family: var(--ff);
     font-weight: 400;
     line-height: 1.75;
 }
@@ -64,14 +59,15 @@ p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 {
     margin: 3rem 0 1.38rem;
-    font-family: var(--headingFont);
     font-weight: 400;
     line-height: 1.3;
+    color: var(--green-20);
 }
 
 h1 {
     margin-top: 0;
-    font-size: 2.488rem;
+    padding-top: 0;
+    font-size: 2rem;
 }
 
 h2 {font-size: 2.074rem;}
@@ -83,7 +79,6 @@ h4 {font-size: 1.44rem;}
 h5 {font-size: 1.2rem;}
 
 .textFont {font-size: 0.833rem;}
-
 
 img{
     width: 100%;
@@ -117,21 +112,13 @@ a:hover{
     box-shadow: var(--shadow-1);
     transition: var(--transtion);
     display: block;
+
 }
 
 .btn:hover {
-    background: var(--primary-700);
+    background: var(--green-20);
     box-shadow: var(--shadow-3);
 }
-
-.btn-hipster {
-    color: var(--primary-500);
-    background: var(--primary-200);
-}
-
-.btn-hipster:hover {
-    color: var(--primary-200);
-    background: var(--primary-700);}
 
 .btn-block {
     width: 100%;
@@ -196,6 +183,7 @@ a:hover{
 .action-btn{
     background-color: var(--red-0);
     padding: 0.5rem 1rem;
+    margin-bottom :1rem;
     border: none;
     outline: none;
     border-radius: var(--borderRadius);
@@ -227,6 +215,31 @@ a:hover{
     }
 }
 
-.banner
+/* banner */
+
+.banner {
+    height: 40em;
+    position: relative;
+    margin-bottom: 2rem;
+    background: url('../img/banner.jpg') center center fixed no-repeat;
+    background-size: cover;
+    text-align: justify;
+}
+
+.banner h1 {
+    text-align: start;
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .banner {
+        height: 60rem;
+    }
+    
+    .banner h1 {
+        font-size: 3.052rem;
+    }
+}
 
 
