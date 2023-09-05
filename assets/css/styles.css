@@ -80,11 +80,12 @@ h5 {font-size: 1.2rem;}
 
 .textFont {font-size: 0.833rem;}
 
-img{
+/*img{
     width: 100%;
     display: block;
     object-fit: cover;
 }
+*/
 
 ul{
     list-style-type: none;
@@ -228,5 +229,15 @@ a:hover{
     .m_5{
         margin-left: auto;
     }
+}
+
+.formations {
+    height: 75em;
+    background: url('../img/formation.jpeg') center center fixed no-repeat;
+    background-size: cover;
+}
+
+.formations h3{
+    text-transform: uppercase;
 }
 
