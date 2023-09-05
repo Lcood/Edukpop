@@ -102,28 +102,6 @@ a:hover{
     color: var(--red-0);
 }
 
-.btn {
-    cursor: pointer;
-    color: var(--greenLight-100);
-    border: transparent;
-    border-radius: var(--borderRadius);
-    letter-spacing: var(--letterSpacing);
-    padding: 0.375rem 0.75rem;
-    box-shadow: var(--shadow-1);
-    transition: var(--transtion);
-    display: block;
-
-}
-
-.btn:hover {
-    background: var(--green-20);
-    box-shadow: var(--shadow-3);
-}
-
-.btn-block {
-    width: 100%;
-}
-
 /* Navbar*/
 
 .navbar {
@@ -176,32 +154,8 @@ a:hover{
     border-bottom-color: var(--green-0);
 }
 
-.action{
-    margin: 0.8rem;
-}
-
-.action-btn{
-    background-color: var(--red-0);
-    padding: 0.5rem 1rem;
-    margin-bottom :1rem;
-    border: none;
-    outline: none;
-    border-radius: var(--borderRadius);
-    font-size: 0.9rem;
-    font-weight: bold;
-    cursor: pointer;
-
-}
-
-.action-btn:hover{
-    scale: 1.05;
-    color: #fff;
-    background-color: var(--green-20);
-    
-}
-
-.action-btn:active{
-    scale: 0.95;
+.cc-adherer {
+    color: var(--greenLight-100);
 }
 
 @media (min-width: 992px) {
@@ -242,4 +196,37 @@ a:hover{
     }
 }
 
+/* card */
+.available h3 {
+    padding-bottom: 0.8rem;
+    border-bottom: 5px;
+    border-bottom-style: dotted;
+    border-bottom-color: var(--red-0);
+}
+
+.card{
+    background-color: var(--green-0);
+    color: var(--greenLignt-0);
+}
+
+
+.card h5{
+    color: var(--greenLight-100);
+    font-weight: 100;
+}
+
+.text_muted{
+    color: var(--red-light);
+    font-size: 0.7rem;
+}
+
+.m_5{
+    margin-left: 3rem;
+}
+
+@media screen and (min-width: 992px){
+    .m_5{
+        margin-left: auto;
+    }
+}
 
