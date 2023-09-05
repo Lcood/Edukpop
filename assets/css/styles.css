@@ -241,3 +241,17 @@ a:hover{
     text-transform: uppercase;
 }
 
+.cc-carousel{
+    background-color: var(--green-20);
+    color: var(--greenLignt-0);
+
+}
+
+.cc-carousel h3{
+    color :var(--greenLight-100);
+}
+
+footer h5{
+    color: var(--greenLight-100);
+}
+
