@@ -354,10 +354,15 @@ footer h5{
 .featured-formations{
     text-align: center;
     background-color: var(--green-0);
-    padding: 3rem 2rem;
+    padding: 0.8rem 2rem;
 }
-.featured-formations h3, h5{
+.featured-formations h3{
     color: var(--greenLight-20);
+}
+
+.featured-formations h5{
+    color: var(--greenLight-100);
+    font-size: 1rem;
 }
 
 .formation-list {
@@ -439,4 +444,8 @@ footer h5{
         grid-template-columns: 1fr 450px;
         align-items: center;
     }
+}
+
+.services{
+    margin-top: 4rem;
 }
