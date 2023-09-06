@@ -103,6 +103,14 @@ a:hover{
     color: var(--red-0);
 }
 
+.page {
+    width: 90vw;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding-top: 2rem;
+    min-height: calc(100vh - (6rem + 4rem));
+}
+
 /* Navbar*/
 
 .navbar {
@@ -231,27 +239,104 @@ a:hover{
     }
 }
 
-.formations {
-    height: 75em;
-    background: url('../img/formation.jpeg') center center fixed no-repeat;
-    background-size: cover;
-}
-
-.formations h3{
-    text-transform: uppercase;
-}
+/* carrousel */
 
 .cc-carousel{
     background-color: var(--green-20);
     color: var(--greenLignt-0);
 
 }
-
 .cc-carousel h3{
     color :var(--greenLight-100);
 }
 
 footer h5{
     color: var(--greenLight-100);
+}
+
+/* about page */ 
+
+.about-page{
+    display: grid;
+    gap: 2rem 4rem;
+    padding-bottom: 3rem;
+}
+
+.about-page h2 {
+    text-transform: none;
+    font-weight: bold;
+}
+
+.about-article p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.about-img {
+    border-radius: var(--borderRadius);
+    height: 380px;
+    display: none;
+    align-self: center;
+    margin-bottom: 1rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 992px) {
+
+    .about-page{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px;
+        align-items: center;
+        margin-top: 10rem;
+
+    }
+    .about-img {
+        height: 600px;
+        display: block;
+    }
+}
+
+.featured-formations{
+    text-align: center;
+    background-color: var(--green-0);
+    padding: 3rem 2rem;
+}
+.featured-formations h3, h5{
+    color: var(--greenLight-20);
+}
+
+.formation-list {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.formation-list a {
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.formation-img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 992px) {
+
+.featured-formations {
+    margin-top: 10rem;
+    
+}
+.formation-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 }
 
