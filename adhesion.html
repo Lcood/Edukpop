@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduk'pop</title>
+    <!-- normalize style-->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- main styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- header-navbar-->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="#"><img src="assets/img/Logo eduk'pop.png" alt="logo"></a></div>
+            <ul class="links">
+                <li class="nav-link"><a href="index.html">Accueil</a></li>
+                <li class="nav-link"><a href="about.html">Qui sommes-nous ?</a></li>
+                <li class="nav-link"><a href="services.html">Services</a></li>
+                <li class="nav-link"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div><a href="adhesion.html" class="cc-adherer btn btn-outline-success">Adhérer</a></div>
+        </nav>
+    </header>
+
+    <!--main-->
+    <main class="page">
+        <section class="adhesion_container">
+                <article class="adhesion_info">
+                    <h3>Adherer</h3>
+                    <p>
+                        Adhérer est un acte militant qui engage. Ce n'est pas seulement payer une cotisation, 
+                        c'est affirmer que l'on est en accord avec ce que défend la structure dans laquelle 
+                        on souhaite agir ou que l'on souhaite soutenir. 
+                    </p>
+                    <p>Au-delà de l’acte symbolique, devenir adhérent·e c’est signifier son accord, 
+                        sa reconnaissance des valeurs du mouvement comme proches des siennes. 
+                        Toute personne qui se reconnaît dans les valeurs et dans les idées d'Eduk’Pop doit pouvoir y adhérer, 
+                        quel que soit son champ d’action, quelles que soient ses possibilités d’engagement. </p>
+                    <p>
+                        Adhérer, c'est faire un bout de chemin, prendre le temps d’une réflexion, de participer à l'encadrement d'une action. 
+                        Mais, c'est également la possibilité de s’engager dans un militantisme du quotidien, 
+                        à Eduk'Pop comme dans toute autre strucure sociale ou éducative.
+                    </p>
+                    </article>
+
+                    <article>
+                        <form class="form adhesion_form">
+                            <h5>Demande d'adhésion</h5>
+                            <div class="form_row">
+                                <label html="name" class="form_label">Nom</label>
+                                <input type="text" name="name" id="name" class="form_input" />
+                            </div>
+                            <div class="form_row">
+                                <label html="name" class="form_label">Prénom</label>
+                                <input type="text" name="name" id="name" class="form_input" />
+                            </div>
+                            <div class="form_row">
+                                <label html="email" class="form_label">Email</label>
+                                <input type="text" name="email" id="email" class="form_input" />
+                            </div>
+                            <div class="form_row">
+                                <label html="message" class="form_label">Votre message</label>
+                                <textarea name="message" id="message" class="form_textarea"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-danger btn-block">Adhérer</button>
+                        </form>
+                </article>
+        </section>
+
+        <!-- formations -->
+        <section class="featured-formations forma_adhesion">
+            <h3 class="formation">Nos formations !</h3>
+            <div class="formation-list">
+
+                <!-- Les compétences psychosociales -->
+                <a href="formations.html" class="formation">
+                <img src="./assets/img/compétencespsy.jpeg" class="formation-img" alt="formation" />
+                <h5>Les compétences psychosociales</h5>
+                <p>Durée : 2 jours | Heure : 16 heures</p>
+                </a>
+                
+                <!-- Classe dehors -->
+                <a href="formations.html" class="formation">
+                <img src="./assets/img/classeHors.jpeg" class="formation-img" alt="formation"/>
+                <h5>Classe hors les murs</h5>
+                <p>Durée : 3 jours | Heure : 24 heures</p>
+                </a>
+
+                <!--La communication positive-->
+                <a href="formations.html" class="formation">
+                    <img src="./assets/img/comPositive.jpeg" class="formation-img" alt="formation"/>
+                    <h5>La communication positive</h5>
+                    <p>Durée : 2 jours | Heure : 16 heures</p>
+                    </a>
+            </div>
+        </section>
+    </main>
+
+<!--footer-->
+    <section class="container">
+        <footer>
+        <div class="row">
+            <div class="col">
+            <h5>Nos partenaires</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a href="#" class="p-0 text-body-secondary">Le réseau</a></li>
+                <li class="nav-item"><a href="#" class="p-0 text-body-secondary">Adhésion</a></li>
+                <li class="nav-item"><a href="#" class="p-0 text-body-secondary">FAQs</a></li>
+            </ul>
+            </div>
+    
+            <div class="col">
+            <h5>Nos rencontres</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a href="#" class="p-0 text-body-secondary">Calendrier</a></li>
+                <li class="nav-item"><a href="#" class="p-0 text-body-secondary">Les ateliers</a></li>
+                <li class="nav-item"><a href="#" class="p-0 text-body-secondary">FAQs</a></li>
+            </ul>
+            </div>
+    
+            <div class="col">
+            <h5>Nos formations</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a href="#" class="p-0 text-body-secondary">S'inscrire</a></li>
+                <li class="nav-item"><a href="#" class="p-0 text-body-secondary">Nos Mementos</a></li>
+                <li class="nav-item"><a href="#" class="p-0 text-body-secondary">FAQs</a></li>
+            </ul>
+            </div>
+    
+            <div class="col-md-5 offset-md-1">
+                <form>
+                    <h5>Notre newsletter</h5>
+                    <p>Toutes les nouveautés et infos diverses concernant Eduk'Pop.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-danger" type="button"><a href="contact.html">Souscrire</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2023 <a href="#">Eduk’Pop</a>, Tout droit réservé</p>
+            <ul class="d-flex m-2">
+                <li><a href="https://www.facebook.com" class="m-2"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com" class="m-2"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com" class="m-2"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+            
+        </div>
+        </footer>
+    </section>
+</body>
+</html>
